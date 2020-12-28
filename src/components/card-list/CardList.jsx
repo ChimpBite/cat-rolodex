@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from '../card/Card';
 import { makeStyles } from '@material-ui/core/styles';
 import { Paper, Box, Grid } from '@material-ui/core';
+import { LinearScale, Transform } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -12,6 +13,9 @@ const useStyles = makeStyles(theme => ({
   paper: {
     padding: 10,
     margin: 5,
+    '&:hover': {
+      transform: 'scale(1.05)',
+    },
   },
 }));
 
